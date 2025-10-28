@@ -12,3 +12,21 @@
 Дані за кожною категорією були отримані й виведені в консоль у тілі циклу або методу forEach()
 У консолі має бути виведено наступне повідомлення: */
 // #endregion
+
+//: один метод що перебирає (метод масиву )
+//: назва та кількість отримані за допомогою властивостей і методів DOM елементів
+//: теба. показати скільки у певній категорії є назва або кількість
+
+const cat = document.querySelector("ul#categories");
+const items = cat.querySelectorAll(".item");
+
+const catTotal = document.querySelectorAll("#categories .item");
+console.log(`Number of categories: ${catTotal.length}`); // рахує в циклі скільки разів
+
+for (let item of items) {
+  const catName = item.firstElementChild.textContent;
+  const elemTotal = item.lastElementChild.children.length;
+
+  console.log(`Category: ${catName}`); // імя категарії нsа кожній ітер
+  console.log(`Elements: ${elemTotal}`); // загальне число дитини (масиву)
+}
