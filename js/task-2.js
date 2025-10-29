@@ -17,6 +17,8 @@
 Для створення елементів <img> використані дані з масиву об’єктів images
 Усі елементи галереї додані в DOM за одну операцію додавання
 Є мінімальне оформлення галереї флексбоксами через CSS класи */
+
+/*//^ У 2 завданні не вставляйте елементи списку по черзі в циклі. Додавання елементів у DOM має здійснюватися за одну операцію вставки (зверніть на це особливу увагу:point_up:). Ви можете в циклі зібрати всю розмітку, а вже за циклом її зарендерити (додати в ДОМ) за 1 операцію. */
 // #endregion
 
 const images = [
@@ -45,3 +47,21 @@ const images = [
     alt: "Lighthouse Coast Sea",
   },
 ];
+
+const ulElem = document.querySelector("ul.gallery");
+
+// функція для створення розмітки
+function imageTemplate(obj) {
+  return ` <li class="image-lits-item">
+      <img src="${obj.url}" alt="${obj.alt}" class="image-item">
+    </li>`;
+}
+
+// функція для масиву обєктів та обєднання лішок
+function imagesTemplate(images) {
+  return images.map(imageTemplate).join("\n\n\n");
+}
+
+//вcтавка в html
+const markup = imagesTemplate(images);
+ulElem.insertAdjacentHTML("afterbegin", markup);

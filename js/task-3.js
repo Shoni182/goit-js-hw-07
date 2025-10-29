@@ -15,3 +15,15 @@
 Значення в інпуті очищене від пробілів по краях
 Якщо інпут порожній або містить лише пробіли, то замість імені у спан має підставлятися рядок "Anonymous" */
 // #endregion
+
+const inputElem = document.querySelector("#name-input");
+const messageElem = document.querySelector("#name-output");
+
+inputElem.addEventListener("input", () => {
+  const msg = inputElem.value;
+  if (inputElem.value.trim() === "") {
+    messageElem.textContent = "Anonymous";
+  } else {
+    messageElem.textContent = msg;
+  }
+});

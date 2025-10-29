@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -8,17 +9,18 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #b6e4ed;
   color: #212121;
   line-height: 1.5;
 }
 
-/*: Task 1 */
+/*; Styles for Task 1 */
 /* #region  task 1*/
 
 .categories-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 
 }
@@ -42,11 +44,10 @@ body {
   border-radius: 8px;
   padding: 16px;
   width: 392px;
-  background: #f6f6fe;
+  background: #c5cef3;
 }
 
 .categories-item-list li {
-  list-style: none;
   width: 100%;
   height: 40px;
   border: 1px solid #808080;
@@ -54,5 +55,59 @@ body {
   padding: 8px 16px;
 }
 
+/* #endregion */
+
+/*; Styles for Task 2 */
+/* #region  */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px;
+  gap: 24px;
+}
+
+.image-list-item {
+  flex-basis: calc((100% - 24px * 3)/6);
+
+}
+
+.image-item {
+  border-radius: 8px;
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+  transform: scale(1.1)
+}
+
+/* #endregion */
+
+/*; Styles for Task 3 */
+/* #region  */
+
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+/*; Styles for Task 4 */
+/* #region  */
+
+/* #endregion */
+
+/*; Styles for Task 5 */
+/* #region  */
 
 /* #endregion */

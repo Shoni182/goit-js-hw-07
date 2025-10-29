@@ -21,12 +21,12 @@ const cat = document.querySelector("ul#categories");
 const items = cat.querySelectorAll(".item");
 
 const catTotal = document.querySelectorAll("#categories .item");
-console.log(`Number of categories: ${catTotal.length}`); // рахує в циклі скільки разів
+console.log(`Number of categories: ${catTotal.length}`);
 
 for (let item of items) {
   const catName = item.firstElementChild.textContent;
   const elemTotal = item.lastElementChild.children.length;
 
-  console.log(`Category: ${catName}`); // імя категарії нsа кожній ітер
-  console.log(`Elements: ${elemTotal}`); // загальне число дитини (масиву)
+  console.log(`Category: ${catName}`);
+  console.log(`Elements: ${elemTotal}`);
 }
