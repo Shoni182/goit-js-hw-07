@@ -18,7 +18,7 @@
 // #endregion
 
 const btnElem = document.querySelector("button.change-color");
-const bgmElem = document.querySelector("body");
+const bgmElem = document.querySelector(".widget");
 const textElem = document.querySelector("span.color");
 
 btnElem.addEventListener("click", () => {
