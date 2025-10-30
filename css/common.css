@@ -202,6 +202,10 @@ body {
 /*; Styles for Task 5 */
 /* #region task 5 */
 
+.body-section {
+  transition: background-color 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .widget {
   display: flex;
   flex-direction: column;
@@ -214,6 +218,8 @@ body {
   height: 280px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: background-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #ffffff9b;
+
 }
 
 .change-color {
@@ -229,17 +235,16 @@ body {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
-  transition: 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 .widget-text {
-  border: 1px solid gray;
   border-radius: 8px;
   padding: 5px;
   text-align: center;
   min-width: 180px;
   min-height: 60px;
-  background-color: #b6e4ed;
+  background-color: #ffffff;
 }
 
 .change-color:focus,

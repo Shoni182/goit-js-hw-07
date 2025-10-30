@@ -18,12 +18,14 @@
 // #endregion
 
 const btnElem = document.querySelector("button.change-color");
-const bgmElem = document.querySelector(".widget");
+const bgmElem = document.querySelector("body");
 const textElem = document.querySelector("span.color");
+const widgetElem = document.querySelector(".widget-text");
 
 btnElem.addEventListener("click", () => {
   bgmElem.style.backgroundColor = getRandomHexColor();
   textElem.textContent = bgmElem.style.backgroundColor;
+  widgetElem.style.border = bgmElem.style.backgroundColor;
 });
 
 function getRandomHexColor() {
