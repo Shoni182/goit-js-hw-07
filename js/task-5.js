@@ -17,6 +17,15 @@
 /* //? 5 завдання - колір у стилях і показаний в інтерфейсі - однакові, коли ви робите 2 виклика функції - у вас записуються різні кольори на боді і в спан. */
 // #endregion
 
+const btnElem = document.querySelector("button.change-color");
+const bgmElem = document.querySelector("body");
+const textElem = document.querySelector("span.color");
+
+btnElem.addEventListener("click", () => {
+  bgmElem.style.backgroundColor = getRandomHexColor();
+  textElem.textContent = bgmElem.style.backgroundColor;
+});
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)

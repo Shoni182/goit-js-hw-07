@@ -19,6 +19,13 @@
 const inputElem = document.querySelector("#name-input");
 const messageElem = document.querySelector("#name-output");
 
+// #region added container
+const divElem = document.createElement("div");
+divElem.classList.add("input-container");
+inputElem.insertAdjacentElement("beforebegin", divElem);
+divElem.append(inputElem, messageElem.parentElement);
+// #endregion
+
 inputElem.addEventListener("input", () => {
   const msg = inputElem.value;
   if (inputElem.value.trim() === "") {

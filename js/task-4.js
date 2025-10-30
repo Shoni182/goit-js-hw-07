@@ -26,6 +26,12 @@
 
 const formElem = document.querySelector(".login-form");
 
+const btnElem = document.querySelector(".form-btn");
+const labelElem = document.querySelector(".form-label");
+const inputElem = document.querySelector("#user-email");
+
+btnElem.textContent = "Log in";
+
 formElem.addEventListener("submit", (event) => {
   event.preventDefault();
 

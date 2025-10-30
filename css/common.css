@@ -28,6 +28,7 @@ body {
 .categories-item-title {
   margin: 0;
   margin-bottom: 16px;
+
 }
 
 .categories-item-list {
@@ -35,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+
 }
 
 .item {
@@ -44,7 +46,8 @@ body {
   border-radius: 8px;
   padding: 16px;
   width: 392px;
-  background: #c5cef3;
+  background: #f3eac5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .categories-item-list li {
@@ -58,7 +61,7 @@ body {
 /* #endregion */
 
 /*; Styles for Task 2 */
-/* #region  */
+/* #region task 2 */
 
 .gallery {
   display: flex;
@@ -70,7 +73,6 @@ body {
 
 .image-list-item {
   flex-basis: calc((100% - 24px * 3)/6);
-
 }
 
 .image-item {
@@ -89,25 +91,117 @@ body {
 /* #endregion */
 
 /*; Styles for Task 3 */
-/* #region  */
+/* #region task 3 */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 136px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.input-item {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+}
+
+.input-text {
+  margin: 0;
+}
+
+
 
 /* #endregion */
 
-
-
-
-
-
-
-
-
-
 /*; Styles for Task 4 */
-/* #region  */
+/* #region task 4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.form-label:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  border: none;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  padding: 8px 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.form-btn:focus,
+.form-btn:hover {
+  background: #355ff6;
+}
+
+.form-btn:active {
+  transform: scale(0.9);
+  background: #4e75ff;
+}
+
 
 /* #endregion */
 
 /*; Styles for Task 5 */
-/* #region  */
+/* #region task 5 */
 
 /* #endregion */
