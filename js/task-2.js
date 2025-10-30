@@ -50,18 +50,18 @@ const images = [
 
 const ulElem = document.querySelector("ul.gallery");
 
-// функція для створення розмітки
+// foo for markup
 function imageTemplate(obj) {
   return ` <li class="image-lits-item">
       <img src="${obj.url}" alt="${obj.alt}" class="image-item">
     </li>`;
 }
 
-// функція для масиву обєктів та обєднання лішок
+// foo for array of objects and join
 function imagesTemplate(images) {
   return images.map(imageTemplate).join("\n\n\n");
 }
 
-//вcтавка в html
+// markup implementation
 const markup = imagesTemplate(images);
 ulElem.insertAdjacentHTML("afterbegin", markup);

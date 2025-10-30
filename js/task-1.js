@@ -13,12 +13,8 @@
 У консолі має бути виведено наступне повідомлення: */
 // #endregion
 
-//: один метод що перебирає (метод масиву )
-//: назва та кількість отримані за допомогою властивостей і методів DOM елементів
-//: теба. показати скільки у певній категорії є назва або кількість
-
-const cat = document.querySelector("ul#categories");
-const items = cat.querySelectorAll(".item");
+const catElem = document.querySelector("ul#categories");
+const items = catElem.querySelectorAll(".item");
 
 const catTotal = document.querySelectorAll("#categories .item");
 console.log(`Number of categories: ${catTotal.length}`);
