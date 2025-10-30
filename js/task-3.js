@@ -25,8 +25,8 @@ divElem.append(inputElem, messageElem.parentElement);
 // #endregion
 
 inputElem.addEventListener("input", () => {
-  const msg = inputElem.value;
-  if (inputElem.value.trim() === "") {
+  const msg = inputElem.value.trim();
+  if (msg === "") {
     messageElem.textContent = "Anonymous";
   } else {
     messageElem.textContent = msg;
